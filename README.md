@@ -46,7 +46,13 @@ The protocol defines 3 functions:
 * `present?(data)` - true/false
 * `presence(data)` - returns the value if it is not blank. nil if it is blank
 
+## Contributing
 
+We love contributions and they're welcome here!
+
+C3P0 is aiming to be a central collection of useful protocols and we'd love more protocols that folks find useful. 
+
+Please raise an issue or submit a PR. Protocols can be really powerful especially if everyone uses the same ones.
 
 ## Installation
 

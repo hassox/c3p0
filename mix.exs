@@ -6,7 +6,7 @@ defmodule C3P0.MixProject do
   def project do
     [
       app: :c3p0,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.9",
       description: description(),
       consolidate_protocols: Mix.env() != :test,
@@ -17,22 +17,20 @@ defmodule C3P0.MixProject do
         canonical: "https://hexdocs.pm/c3p0",
         extras: ["README.md"],
         source_ref: "v#{@version}",
-        source_url: "https://github.com/hassox/c3p0",
+        source_url: "https://github.com/hassox/c3p0"
       ],
       package: [
         files: [
           ".formatter.exs",
           "mix.exs",
           "README.md",
-          "lib",
+          "lib"
         ],
         licenses: ["MIT"],
         links: %{"Github" => "https://github.com/hassox/c3p0"},
         maintainers: ["Daniel Neighman"]
       ],
-      source_url: "https://github.com/hassox/c3p0",
-      version: @version,
-
+      source_url: "https://github.com/hassox/c3p0"
     ]
   end
 
@@ -49,7 +47,7 @@ defmodule C3P0.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
     ]
   end
 

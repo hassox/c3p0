@@ -8,11 +8,11 @@ defprotocol C3PO.GenerateGuid do
     guid: String.t()
   }
 
-  @type child_type :: atom
+  @type parent :: map
 
   @spec generate_new_attrs(term) :: generated_attrs
   def generate_new_attrs(data)
 
-  @spec generate_new_attrs(term, child_type) :: generated_attrs
-  def generate_new_attrs(data, child_type)
+  @spec generate_new_attrs(term, parent) :: generated_attrs
+  def generate_new_attrs(data, parent)
 end

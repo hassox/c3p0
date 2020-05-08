@@ -1,4 +1,4 @@
-defprotocol C3PO.GenerateGuid do
+defprotocol C3P0.GenerateGuid do
   @moduledoc """
   Generate attributes for a new guid given a resource.
   """

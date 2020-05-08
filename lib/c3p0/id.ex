@@ -66,6 +66,7 @@ defimpl C3P0.ID, for: Any do
   def id(%{guid: id}), do: id
   def id(%{"guid" => id}), do: id
   def id(%{}), do: nil
+  def id(nil), do: nil
   def id(v) do
     raise Protocol.UndefinedError, protocol: C3P0.ID, value: v, description: "unknown value for id"
   end
